@@ -1,0 +1,207 @@
+@import url('./reset.css');
+
+body{
+  
+    font-family: 'Lato', sans-serif;
+    color:#333;
+}
+
+
+main{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+img{
+    max-width: 100%;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 30px 40px 30px; /* Agregar espacio debajo del título */
+}
+.buscar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+
+}
+
+input[type="search"] {
+ 
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    margin-right: 6px;
+    outline: none;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+.btn {
+  position: relative;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #440080;
+    line-height: 50px;
+    color: white;
+
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn i {
+    padding: 5px;
+
+    border-radius: 10px;
+    font-size: 24px;
+ 
+}
+
+h1 {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+
+/* Main */
+.container-items{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.item{
+    border-radius: 10px;
+   padding: 20px;
+    margin-bottom: 20px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    /* adaptar la img */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+.item figure{
+    overflow: hidden;
+}
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+.precio {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 10px; 
+}
+
+button{
+   
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: block; /* Hacer que el botón sea un elemento de bloque */
+    margin: 0 auto; /* Esto centrará el botón horizontalmente */
+    margin-top: 30px ; /* Espacio superior para separar el botón de las tarjetas */
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: rgb(27, 133, 27);
+}
+
+footer{
+    width: 100%; /* Ancho igual al ancho de la ventana */
+    margin-top: 40px;
+    background-color: #d3ebf4;
+    text-align: center;
+    padding: 10px 0;
+    
+  
+}
+
+footer h2 {
+    margin-bottom: 10px; 
+}
+
+footer h5, footer h6 {
+    margin: 5px 0;
+}
+
+
+
+@media (max-width: 768px) {
+    .container-items {
+        grid-template-columns: 1fr; /* Cambiar a una columna */
+        gap: 20px; /* Agregar espacio entre las tarjetas */
+    }
+    .item {
+        margin: 0 auto;
+        width: 300px;
+      
+      
+       
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+        .container-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+      
+ }
+
+
+/* Estilos para el contenedor del mensaje de error */
+#errorContainer {
+    display: none;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.2); /* Color de fondo semi-transparente */
+    padding: 20px; 
+    border-radius: 10px; 
+   
+    font-size: 18px; 
+    color: red; 
+}
+
+.no-encontrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+   font-size: 18px;
+}

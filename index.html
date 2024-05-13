@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"> 
+    <title>AluraGeek</title>
+</head>
+<body>
+
+
+    <!-- TARJETAS -->
+    <header>
+        <h1>!Bienvenido AluraGeek ❤️❤️!</h1>
+    </header>
+
+    <div class="buscar">
+        <input type="search" name="search"  class="buscar__input" placeholder="Buscar" data-buscar>
+        <div class="btn">
+            <i class="material-icons" data-btn-buscar>  search </i>
+        </div>
+    </div>
+    
+  <main>
+    <div id="errorContainer" class="mensaje_error" style="display: none;">
+        Lo sentimos, se produjo un error al intentar establecer la conexión con el servidor. Por favor, inténtalo de nuevo más tarde
+    </div>
+    <h2 class="no-encontrado" style="display: none"></h2>
+    
+   <div class="container-items" data-card>
+   
+        <!-- <div class="item">
+            <figure>
+                <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="producto" >
+            </figure>
+
+            <div class="info-producto">
+                <h2>Auriculares</h2>
+                <p class="precio">$20</p>
+                <i class="material-icons eliminar-icono">delete</i>
+
+            </div>
+        </div>
+   -->
+    <!-- <div class="item">
+        <figure>
+            <img src="https://images.unsplash.com/photo-1598662779094-110c2bad80b5?q=80&w=1546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="producto" >
+        </figure>
+
+       <div class="info-producto">
+            <h2>Teclado</h2>
+            <p class="precio">$20</p>
+            <i class="material-icons">  delete </i>
+        </div>
+    </div> -->
+
+    <!-- <div class="item">
+        <figure>
+            <img src="https://images.unsplash.com/photo-1636489895903-931c009d3574?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="producto" >
+        </figure>
+
+        <div class="info-producto">
+            <h2>Mouse</h2>
+            <p class="precio">$20</p>
+            <i class="material-icons">  delete </i>
+        </div>
+    </div> -->
+
+    <!-- <div class="item">
+        <figure>
+            <img src="https://images.unsplash.com/photo-1581198321428-cd65cfc898e5?q=80&w=1525&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="producto" >
+        </figure>
+
+        <div class="info-producto">
+            <h2>Game boy classic</h2>
+            <p class="precio">$20</p>
+            <i class="material-icons">  delete </i>
+            
+        </div>
+    </div> -->
+</div>
+</main>
+
+<a href="./pages/formulario.html" target="_blank"><button>Agregue Nuevos Productos</button></a>
+
+<footer class="footer">
+    <h2>AluraGeek❤️❤️</h2>
+    <h5>DESARROLLADO POR YORLEIS ARIAS ROCHA</h5>
+    <h6>Alura Latam 2024</h6>
+</footer>
+<script src="./js/showProducts.js" type="module"></script>
+<script src="./js/obtenerProducto.js" type="module"></script>
+<script src="./js/eliminarProducto.js" type="module"></script>
+
+</body>
+</html>

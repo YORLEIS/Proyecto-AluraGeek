@@ -1,0 +1,61 @@
+@import url('./reset.css');
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 100%;
+    color:#333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+
+   justify-content: center;
+   
+}
+
+
+main{
+   
+    width: 80%;
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+    background-color: #fff; /* Fondo blanco */
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+p{
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a{
+    color: #007bff; /* Color de enlace */
+    transition: color 0.3s ease; /* Agregar transición de color */
+}
+
+a:hover {
+    color: green; /* Cambiar color al pasar el mouse */
+}
+
+@media (max-width: 768px) {
+    main {
+        max-width: 80%;
+        padding: 20px;
+        margin: 0 auto;
+        margin-left: 10px; /* Agregar margen izquierdo */
+        margin-right: 10px; /* Agregar margen derecho */
+    }
+}

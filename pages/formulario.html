@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon"> 
+    <title>Registro</title>
+</head>
+
+    <body>
+        <div class="contenedor">
+        <form data-form>
+            <h1>AGREGUE PRODUCTO</h1>
+            <div class="container-input">
+                <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre..." minlength="3" data-nombre required >
+            </div>
+          
+            <div class="container-input">
+                <input class="formcontato__input" type="number" name="precio" placeholder="Precio..." data-precio required>
+            </div>
+
+            <div class="container-input">
+            <input class="formcontato__input" type="text" name="imagen" placeholder="Imagen..." data-imagen required>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <button class="btn-limpiar" type="button">Limpiar</button>
+            </div>
+           
+        </form>
+    </div>
+        
+      
+      
+    
+    
+    <script src="../js/createProduct.js" type="module"></script>
+      </body>
+ 
+      
+</html>

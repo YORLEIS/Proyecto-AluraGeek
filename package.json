@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "plataforma de productos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yorleis",
+  "license": "ISC"
+}
